@@ -1,0 +1,26 @@
+{
+  "name": "munchtracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "mongodb": "^4.2.1",
+    "react-bootstrap": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsThatGuySudhanshu/MunchTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItsThatGuySudhanshu/MunchTracker/issues"
+  },
+  "homepage": "https://github.com/ItsThatGuySudhanshu/MunchTracker#readme"
+}
