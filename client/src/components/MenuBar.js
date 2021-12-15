@@ -1,6 +1,7 @@
-import { Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import {Navbar, Nav, NavDropdown} from "react-bootstrap";
 import {loginWithRedirect, logout, isAuthenticated, useAuth0} from '@auth0/auth0-react';
+import { Button } from '@mui/material';
 
 
 function MenuBar () {
@@ -15,7 +16,7 @@ function MenuBar () {
         if (isAuthenticated) {
             return (
             <Nav.Link eventKey={2} to='/'>
-                <Button style={buttonStyle} onClick={() => logout()} variant="danger">
+                <Button style={buttonStyle} onClick={() => logout()} variant="contained">
                     Logout
                 </Button>
             </Nav.Link>
@@ -23,7 +24,7 @@ function MenuBar () {
         } else {
             return (
                 <Nav.Link eventKey={2} to='/'>
-                    <Button style={buttonStyle} onClick={() => loginWithRedirect()} variant="danger">
+                    <Button style={buttonStyle} onClick={() => loginWithRedirect()} variant="contained">
                         Login
                     </Button>
                 </Nav.Link>
