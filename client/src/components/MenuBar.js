@@ -40,7 +40,8 @@ function MenuBar () {
             <Nav className="me-auto">
               <Nav.Link href="/recipes">Recipes</Nav.Link>
               <Nav.Link href="/inventory">Inventory</Nav.Link>
-              <Nav.Link href="/fridge">Refrigerated</Nav.Link>
+              <Nav.Link href="/profile">Profile</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
             </Nav>
             <Nav>
                 {renderAuthButton()}

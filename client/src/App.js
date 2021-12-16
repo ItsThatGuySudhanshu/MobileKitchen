@@ -5,6 +5,7 @@ import MenuBar from './components/MenuBar';
 import ProtectedRoute from "./components/auth0/ProtectedRoute";
 import Inventory from "./components/Inventory";
 import Recipes from "./components/Recipes";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
           <ProtectedRoute path="/recipes" exact component={() => <Recipes />} />
         </Switch>
       </div>
+      <div>
+        <Footer />
+      </div>
+
     </div>
   );
 }
