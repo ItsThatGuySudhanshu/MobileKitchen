@@ -4,7 +4,7 @@ import '../styles/footer.css';
 
 const Footer = () => {
     return (
-        <Container className="footer">
+        <footer className="footer">
             <Row>
                 <Col>
                 Copyright C 2021
@@ -25,7 +25,7 @@ const Footer = () => {
                 </Col>
             </Row>
 
-        </Container>
+        </footer>
     );
 }
 

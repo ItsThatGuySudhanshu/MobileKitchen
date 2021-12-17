@@ -8,7 +8,7 @@ function MenuBar () {
     const {loginWithRedirect, logout, isAuthenticated} = useAuth0();
 
     const buttonStyle = {
-        width: '90px',
+        width: '100px',
         height: '45px'
     };
 
@@ -38,10 +38,12 @@ function MenuBar () {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/recipes">Recipes</Nav.Link>
-              <Nav.Link href="/inventory">Inventory</Nav.Link>
-              <Nav.Link href="/profile">Profile</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
+                <Nav.Link href="/inventory">Inventory</Nav.Link>
+
+                <Nav.Link href="/recipes">Recipes</Nav.Link>
+
+                <Nav.Link href="/profile">Profile</Nav.Link>
+
             </Nav>
             <Nav>
                 {renderAuthButton()}

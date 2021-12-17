@@ -1,0 +1,19 @@
+#plus-button-space {
+    border-radius: 20px;
+    height: 40px;
+    width: 30px;
+    font-size: 20px;
+    background-color: rgb(209, 74, 74);
+    color: rgb(40, 40, 245);
+}
+
+#space-container {
+    min-height: 400px;
+    min-width: max-content;
+}
+
+#plus-button-container {
+    display: flex;
+    justify-content: right;
+    flex-flow: row;
+}
