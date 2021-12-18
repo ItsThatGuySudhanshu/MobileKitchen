@@ -3,16 +3,32 @@ import { Container } from "react-bootstrap";
 import AddIcon from '@mui/icons-material/Add';
 import { useState } from "react";
 import '../styles/inventory.css';
+import SpacePopup from "./SpacePopup";
+import IngredientPopup from "./IngredientPopup";
 
 
 const Inventory = () => {
-    let [space, setSpace] = useState(false);
-    let [ingredient, setIngredient] = useState(false);
-    let createSpace = (e) => {
+    let [spacePopup, setSpacePopup] = useState(false);
+    let [ingredientPopup, setIngredientPopup] = useState(false);
+
+
+    let triggerSpacePopup = () => {
+        setSpacePopup(true);
+        // Will render the space popup only if ingredient popup is false
 
     }
 
-    let triggerSpacePopup = () => {
+    let triggerIngredientPopup = () => {
+        setIngredientPopup(true);
+        // Will render the space popup only if ingredient popup is false
+
+    }
+
+    let submittedSpace = (e) => {
+
+    }
+
+    let submittedIngredient = (e) => {
 
     }
 
@@ -23,6 +39,8 @@ const Inventory = () => {
 
                 </Container>
             </Container>
+            {spacePopup && !ingredientPopup && <SpacePopup setSpacePopup={setSpacePopup} onSubmit={submittedSpace} /> }
+            {!spacePopup && ingredientPopup && <IngredientPopup onSubmit={submittedIngredient}/> }
             <Container id="plus-button-container">
                 <Button id="plus-button-space" onClick={() => triggerSpacePopup()}>+</Button>
             </Container>

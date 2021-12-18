@@ -8,12 +8,13 @@ import Recipes from "./components/Recipes";
 import Footer from "./components/Footer";
 import Profile from "./components/Profile";
 import About from "./components/About";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
     <div id="app">
         <MenuBar/>
-      <div>
+      <Container>
         <Switch>
           <Route path="/" exact component={Home} />
 
@@ -24,10 +25,10 @@ function App() {
           <Route path="/about" exact component={() => <About />} />
 
         </Switch>
-      </div>
-      <div>
+      </Container>
+      <Container>
         <Footer />
-      </div>
+      </Container>
 
     </div>
   );
