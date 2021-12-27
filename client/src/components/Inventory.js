@@ -10,6 +10,7 @@ import IngredientPopup from "./IngredientPopup";
 const Inventory = () => {
     let [spacePopup, setSpacePopup] = useState(false);
     let [ingredientPopup, setIngredientPopup] = useState(false);
+    let []
 
 
     let triggerSpacePopup = () => {
@@ -32,6 +33,8 @@ const Inventory = () => {
 
     }
 
+
+
     return (
         <Container>
             <Container id="space-container">
@@ -42,7 +45,7 @@ const Inventory = () => {
             {spacePopup && !ingredientPopup && <SpacePopup setSpacePopup={setSpacePopup} onSubmit={submittedSpace} /> }
             {!spacePopup && ingredientPopup && <IngredientPopup onSubmit={submittedIngredient}/> }
             <Container id="plus-button-container">
-                <Button id="plus-button-space" onClick={() => triggerSpacePopup()}>+</Button>
+                <Button id="plus-button-space" onClick={() => triggerSpacePopup()} set>+</Button>
             </Container>
         </Container>
     )
