@@ -9,12 +9,13 @@ import Footer from "./components/Footer";
 import Profile from "./components/Profile";
 import About from "./components/About";
 import { Container } from "react-bootstrap";
+import './styles/app.css'
 
 function App() {
   return (
     <div id="app">
-        <MenuBar/>
-      <Container>
+      <MenuBar/>
+      <Container id="content-container">
         <Switch>
           <Route path="/" exact component={Home} />
 
@@ -26,9 +27,9 @@ function App() {
 
         </Switch>
       </Container>
-      <Container>
-        <Footer />
-      </Container>
+
+      <Footer />
+
 
     </div>
   );

@@ -34,9 +34,9 @@ function MenuBar () {
     return (
         <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="/">Munch Tracker</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Brand href="/">Munch Tracker</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link href="/inventory">Inventory</Nav.Link>
 
@@ -48,9 +48,9 @@ function MenuBar () {
             <Nav>
                 {renderAuthButton()}
             </Nav>
-          </Navbar.Collapse>
+            </Navbar.Collapse>
         </Container>
-      </Navbar>);
+        </Navbar>);
 
 }
 

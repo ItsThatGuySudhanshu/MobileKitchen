@@ -21,7 +21,6 @@ const Footer = () => {
                 <Col>
                 <p id="contact-us-text">Contact Us!</p>
 
-
                 </Col>
             </Row>
 
